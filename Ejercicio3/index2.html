@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM</title>
+    <link href="micss/bootstrap.min.css" rel="stylesheet">
+    <link href="micss/micss.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Inicio</a>
+            </div> 
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="navShop" class="nav navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container" id = "container">
+        <div class="row">
+            <div class="col-md-9">
+                <div id="sct1" class="row">
+                 <div class="col-md-5">
+                <div id="listCategories" class="list-group">
+                </div>        
+            </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="container" id = "container">
+        <hr>
+                <p id="catMenu" class="lead">Buscar: </p>
+                <button type="button" onclick="showActors()">Actor</button>
+                <button  type="button" onclick="showDirectors()">Director</button> 
+        <div id = "persons">
+            
+        </div>
+        <div id = "person">
+            
+        </div>
+       <footer>
+           <div class="row">
+               <div class="col-lg-12">
+                   <p>Realizado por: Diego Moreno</p>
+               </div>
+            </div>
+       </footer>
+    </div>
+
+    <!-- jQuery -->
+    <script src="java/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="java/bootstrap.min.js"></script>
+    
+    <!-- Custom js -->
+    <script src="java/error.js"></script>
+    <script src="java/VideoSystem.js"></script>
+    <script src="java/objetos.js"></script> 
+    <script src="java/populate.js"></script>
+
+</body>
+</html>
