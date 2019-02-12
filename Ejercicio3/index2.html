@@ -1,73 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DOM</title>
-    <link href="micss/bootstrap.min.css" rel="stylesheet">
-    <link href="micss/micss.css" rel="stylesheet">
+    <title>Ejemplo W3C adaptado a Bootstrap</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width">
+    <meta name="author" content="Autor">
+    <link rel="icon" type="image/ico" href="imagenes/favicon.ico">
+
+    <!-- Viewport -->
+
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="micss/micss.css">
+
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-expand-sm  navbar-nav fixed-top d-none d-sm-block bg-danger" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Inicio</a>
-            </div> 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul id="navShop" class="nav navbar-nav">
+                <ul class="navbar-nav" id = "menu">
+                    <li>
+                        <a class="navbar-brand active text-white" href="#">Inicio</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     
-    <div class="container" id = "container">
-        <div class="row">
-            <div class="col-md-9">
-                <div id="sct1" class="row">
-                 <div class="col-md-5">
-                <div id="listCategories" class="list-group">
+    <div class="container mt-3 " id = "container">
+                <div id="listCategories" class="container mx-auto row">
                 </div>        
-            </div> 
                 </div>
-            </div>
-        </div>
-    </div>
     
     <!-- Footer -->
     <div class="container" id = "container">
         <hr>
-                <p id="catMenu" class="lead">Buscar: </p>
-                <button type="button" onclick="showActors()">Actor</button>
-                <button  type="button" onclick="showDirectors()">Director</button> 
-        <div id = "persons">
+                <p id="catMenu" class="h2">Buscar: </p>
+                <button type="button" class = "btn bg-info text-dark rounded collapsed" onclick="showActors()">Actor</button>
+                <button  type="button" class = "btn bg-info text-dark rounded collapsed" onclick="showDirectors()">Director</button> 
+        <div id = "persons" class = "container">
             
         </div>
-        <div id = "person">
+        <div id = "person" class = "container">
             
         </div>
-       <footer>
-           <div class="row">
-               <div class="col-lg-12">
-                   <p>Realizado por: Diego Moreno</p>
+       <footer class = "container-fluid bg-danger mt-3">
+               <div class="container">
+                   <p class = "text-center text-white h4">Realizado por: Diego Moreno</p>
                </div>
-            </div>
        </footer>
     </div>
-
-    <!-- jQuery -->
-    <script src="java/jquery.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="java/bootstrap.min.js"></script>
-    
-    <!-- Custom js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="java/error.js"></script>
     <script src="java/VideoSystem.js"></script>
     <script src="java/objetos.js"></script> 

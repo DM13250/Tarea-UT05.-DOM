@@ -2,11 +2,11 @@
 body {
    
  	padding-top: 70px;
-    background-image: linear-gradient(#FFCA28 , #283593   , black   );
+    background-image:url(fondo.jpg);
     
 }
 p{
-    color:floralwhite;
+    color:black;
     font-family: serifa;
     font-size: 16px;
 }
@@ -20,7 +20,7 @@ img{
 
 h1, h4{
     margin-top: 3.5%;
-    color: whitesmoke;
+    color: black;
 }
 
 button{
@@ -31,7 +31,7 @@ button{
 .btn{
     font-size: 25px;
     font-family: ubuntu;
-    color: whitesmoke;
+    color: black;
     text-decoration: underline;
 }
 
@@ -92,10 +92,4 @@ button{
 .thumbnail .caption-full {
     padding: 9px;
     color: #333;
-}
-
-
-footer {
-    margin: 50px 0;
-    text-align: center;
 }
